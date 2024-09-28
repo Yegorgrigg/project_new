@@ -1,0 +1,77 @@
+
+{
+    "linesplit": {
+        "inputs": [
+            "1234:Jozef:Miloslav:Hurban:Legal",
+            "4567:Milan:Rastislav:Stefanik:Defence",
+            "4567:Milan:Rastislav:Stefanik:Defence:sdassdfsa:sjdadasf:adsjdms",
+            "4563:Jozef::Murgas:Development",
+            "4567Defence",
+            "4567:Milan::Murgas"
+        ],
+        "outputs": [
+            ["1234", "Jozef","Miloslav","Hurban","Legal"],
+            ["4567","Milan","Rastislav","Stefanik","Defence"],
+            null,
+            ["4563","Jozef","","Murgas","Development"],
+            null,
+            null
+        ]
+    },
+    "readfile": {
+        "inputs": [
+            "input_file1.txt",
+            "input_file2.txt",
+            "input_file3.txt",
+            "input_file1234.txt",
+            "ijefherasf",
+            "input_file1"
+        ],
+        "outputs": [
+            ["1234:Jozef:Miloslav:Hurban:Legal\n","4567:Milan:Rastislav:Stefanik:Defence\n","4563:Jozef::Murgas:Development\n"],
+            ["1111:Pista::Hufnagel:Sales\n","4563:Pista::Hufnagel:Sales\n"],
+            [],
+            null,
+            null,
+            null
+        ]
+    },
+    "createusername": {
+        "inputs": [
+            null,
+            ["4567","Milan","Rastislav","Stefanik","Defence"],
+            ["4563","Jozef","","Murgas","Development"],
+            null,
+            [],
+            ["1234", "Jozef","Miloslav","Hurban","Legal", "1234", "Jozef","Miloslav","Hurban","Legal"]
+        ],
+        "outputs": [
+            "incorrect_data",
+            "mrstefan",
+            "jmurgas",
+            "incorrect_data",
+            "incorrect_data",
+            "jmhurban"
+        ]
+    },
+    "putanswer": {
+        "inputs": [
+            ["output_file.txt","heqwjf"],
+            ["output_file.txt", 123],
+            ["deghqfjwmfs", "wkqdqwd" ],
+            ["output_file.txt", "WQHDFF"],
+            ["output_file", "whdqfdwdfsd"]
+        ],
+        "outputs": [
+            
+        ]
+    },
+    "mainfunction": {
+        "inputs": 
+            ["temp_output_file.txt", "input_file1.txt", "input_file2.txt", "input_file3.txt"]
+        ,
+        "outputs": 
+           ["1234:jmhurban:Jozef:Miloslav:Hurban:Legal\n",  "4567:mrstefan:Milan:Rastislav:Stefanik:Defence\n","4563:jmurgas:Jozef::Murgas:Development\n","1111:phufnage:Pista::Hufnagel:Sales\n","4563:phufnage1:Pista::Hufnagel:Sales\n"]
+            
+    }
+}
